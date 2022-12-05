@@ -25,6 +25,7 @@
 + CSS/SASS
 + JavaScript
 + Git
++ React
 
 
 ---
