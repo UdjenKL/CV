@@ -1,4 +1,4 @@
-[rs-school](https://udjenkl.github.io/CV-Frontend/)
+[rs-school](https://udjenkl.github.io/rsschool-cv/cv)
 
 ---
 # Yauhen Klimovich
