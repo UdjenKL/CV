@@ -5,17 +5,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="/styles.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        @media (max-width: 1025px) {
+            /* .avatar {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            margin-right: 0;
+            justify-content: center;
+            align-items: center;
+          }
+          .cv {
+            margin: 0auto;
+            width: 100%;
+          } */
+        }
+    </style>
 </head>
 
 <body>
     <div class="cv">
         <header class="header">Header</header>
-        <nav class="nav">Nav</nav>
-        <aside class="aside">Aside</aside>
-        <main class="main">Main</main>
-        <footer class="footer">Footer</footer>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#description" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#curses" class="nav-link">Curses</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <aside class="aside">
+                <img class="avatar" src="./img/My_photo.jpg" alt="My photo">
+                <div class="aside-main">
+                    <div class="contacts">
+                        <h3 class="contacts-title">Contacts</h3><br>
+                        <div>
+                            <span class="contacts-url">Minsk, Belarus</span>
+                        </div>
+                        <div>
+                            <a class="contacts-url" href="mailto:udjenkl@icloud.com">udjenkl@icloud.com</a>
+                            <a class="contacts-url" href="mailto:webrubin1987@gmail.com">webrubin1987@gmail.com</a>
+                        </div>
+                        <div>
+                            <a class="contacts-url" href="https://t.me/username">YauhenKL (Telegram)</a>
+                        </div>
+                        <div>
+                            <a class="contacts-url" href="https://github.com/UdjenKL">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3 class="skills-title">Tech Skills</h3>
+                        <ul>
+                            <li class="item">
+                                <span class="skills-content">HTML5</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">SCSS</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">GIT</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">WebPack</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">JavaScript</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">React.js , Redux</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">Base Node.js</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">Linux , MacOS , Windows</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">WebStorm , VsCode</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">Figma</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">Bootstrap</span>
+                            </li>
+                        </ul>
+                    </div>
+            </aside>
+            <div class="content">
+            <h1 class="name"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="50" />
+                Yauhen Klimovich</h1>
+            <h2 class="profession">Front-end developer</h2>
+            <p class="description">
+                I live in Minsk, Belarus. Since school age, he began to get interested in programming. Completed
+                courses
+                in web design. Graduated in 2021 from the "Private Institute of Management and Entrepreneurship" in
+                the
+                specialty
+                "economist-manager". He received a bachelor's degree and a specialist's degree.
+                He was retrained at BSUIR ( "Belarusian State University of Informatics and
+                Radio Electronics") majoring in "software engineer". The study was so
+                It was fascinating that I decided to continue working in this direction, and began to study JS on my
+                own
+                by
+                the book (David Flanagan - JavaScript. Detailed Guide (6th edition) - 2021). But I realized that
+                without
+                I can't do without additional help, and I signed up for Front-end courses. I got a lot of
+                information,
+                but
+                I understand that not everything is and I want to go further in this direction... Now I am
+                continuing to
+                study this profession and
+                I am improving my knowledge base, including English, and trying to develop in this
+                direction.
+            </p>
+            <div class="projects">
+                <h3 class="projects-title">Projects</h3><br>
+                <ol>
+                    <li class="projects-item">
+                        <a class="url-project" href="https://diplop-itschool.vercel.app/">ShopPresents</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS , React</span><b>]</b></span>
+                    </li>
+                    <li class="projects-item">
+                        <a class="url-project" href="https://shop-js-olive.vercel.app/">ShopJS</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS</span><b>]</b></span>
+                    </li>
+                    <li class="projects-item">
+                        <a class="url-project" href="https://udjenkl.github.io/beautiful-slider/">Slider1</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
+                    </li>
+                    <li class="projects-item">
+                        <a class="url-project" href="https://udjenkl.github.io/SliderUpDown/">Slider2</a>
+                        <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
+                    </li>
+                </ol>
+            </div>
+            <div class="code-example">
+                <pre>function  changeColor (item) {
+    const color = getRandomColor();
+    item.style.backgroundColor = color;
+    item.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+}
+&nbsp;
+function removeColor (item) {
+    item.style.backgroundColor = '#28292C';
+    item.style.boxShadow = `0 0 2px #000`
+}
+&nbsp;
+function getRandomColor () {
+   const index =  Math.floor(Math.random() * colors.length);
+   return colors[index]
+}</pre>
+            </div>
+        </div>
+        </main>
+        <footer class="footer"></footer>
     </div>
 
 </body>
