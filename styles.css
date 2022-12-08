@@ -1,19 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+
 html, body {
     height: 100%;
+    scroll-behavior: smooth; 
 }
 
 body {
-    background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
+    /* background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple); */
+    background: #2F4F4F;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0 auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .cv {
-    
     height: 100%;
     width: 80%;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .header, .nav, .aside, .main, .footer {
@@ -22,36 +32,58 @@ body {
 }
 
 .header {
-   
-    height: 50px;
+    /* background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple); */
+    color: white;
+    background: #171F2B;
+    background: #1c2635;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     margin-bottom: 10px;
-    background: lightskyblue;
+    /* background: #FFFFFF; */
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
 }
 
 .nav {
+    display: flex;
+    justify-content: space-around;
+   
     height: 50px;
-    margin-bottom: 10px;
-    background: lightskyblue;
+    /* margin-bottom: 10px; */
+    background: #680D27;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
-    
+    color: white;
 }
 .nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    
+}
+.nav-list a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 50px;
+ 
+}
+.nav-list a:hover {
+    font-size: 25px;
 }
 
 .aside {
     margin-right: 0;
-    width: 28%;
+    width: 80%;
     background: #1e2939;
     padding-top: 40px;
     padding-bottom: 40px;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
 }
 .avatar {
-    width: 370px;
+    width: 320px;
+    /* border-radius: 100px; */
 }
 .contacts {
     display: flex;
@@ -113,14 +145,34 @@ body {
 .main {
     
     display: flex;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 50px;
-    padding-bottom: 110px;
+    padding: 0 0 0 0;
     margin: 0 auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
     font-family: 'Nunito', sans-serif;
 }
+.content {
+    max-width: 864px;
+    margin: 0 auto;
+    padding: 0 90px;
+    
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 220px;
+    border: 1px solid grey;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.card:hover {
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.30);
+    transform: translateY(-5px);
+  }
+
 .profession {
     text-align: center;
     font-size: 20px;
@@ -151,35 +203,67 @@ body {
 }
 
 .projects {
+    background: #FFEFD5;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
-    background-color: lightgreen;
+    /* background-color: hsl(35, 61%, 79%); */
     text-align: center;
     margin-bottom: 55px;
 }
+.projects ul {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0;
+  
+}
 
-.url-project {
-    color: #595959;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+
+.url-project a{
+    color: white;
+    font-size: 24px;
+    font-weight: 5px;
+    line-height: 40px;
+    text-decoration: none;
+    padding-left: 0;
+
 }
 .projects-item {
+    display: flex;
+    
+    flex-direction: column;
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 10px;
+    list-style-type: none;
+    
+}
+.projects-item img {
+   border-radius:20px;
+    width: 200px;
+    height: 150px;
 }
 .code-example {
     border-radius: 20px;
-    background: lightgrey;
+    background: #ffff;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .footer {
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    height: 100px;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
     background-color: #7E1A34;
-    display: flex;
-    flex-direction: row;
-
+    color: white;
 }
+.footer img{
+    height: 40px;
+}
+
 

@@ -9,34 +9,23 @@
     <link href="/styles.css" rel="stylesheet">
     <title>Document</title>
     <style>
-        @media (max-width: 1025px) {
-            /* .avatar {
-            width: 200px;
-            height: 200px;
-            display: flex;
-            margin-right: 0;
-            justify-content: center;
-            align-items: center;
-          }
-          .cv {
-            margin: 0auto;
-            width: 100%;
-          } */
-        }
+
+
+
     </style>
 </head>
 
 <body>
     <div class="cv">
-        <header class="header">Header</header>
+        <header class="header">
+            <h1 class="name">Resume</h1>
+        </header>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#description" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#curses" class="nav-link">Curses</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
             </ul>
         </nav>
         <main class="main">
@@ -45,9 +34,7 @@
                 <div class="aside-main">
                     <div class="contacts">
                         <h3 class="contacts-title">Contacts</h3><br>
-                        <div>
-                            <span class="contacts-url">Minsk, Belarus</span>
-                        </div>
+
                         <div>
                             <a class="contacts-url" href="mailto:udjenkl@icloud.com">udjenkl@icloud.com</a>
                             <a class="contacts-url" href="mailto:webrubin1987@gmail.com">webrubin1987@gmail.com</a>
@@ -60,13 +47,13 @@
                         </div>
                     </div>
                     <div class="skills">
-                        <h3 class="skills-title">Tech Skills</h3>
+                        <h3 class="skills-title" id="skills">Tech Skills</h3>
                         <ul>
                             <li class="item">
                                 <span class="skills-content">HTML5</span>
                             </li>
                             <li class="item">
-                                <span class="skills-content">SCSS</span>
+                                <span class="skills-content">SCSS,SASS</span>
                             </li>
                             <li class="item">
                                 <span class="skills-content">GIT</span>
@@ -97,75 +84,89 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="skills">
+                        <h3 class="skills-title">Main qualities:</h3>
+                        <ul>
+                            <li class="item">
+                                <span class="skills-content">discipline</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">meeting deadlines</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">analytic skills</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">focus on results</span>
+                            </li>
+                            <li class="item">
+                                <span class="skills-content">Desire to learn new technologies and tools.</span>
+                            </li>
+
+                        </ul>
+                    </div>
             </aside>
             <div class="content">
-            <h1 class="name"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="50" />
-                Yauhen Klimovich</h1>
-            <h2 class="profession">Front-end developer</h2>
-            <p class="description">
-                I live in Minsk, Belarus. Since school age, he began to get interested in programming. Completed
-                courses
-                in web design. Graduated in 2021 from the "Private Institute of Management and Entrepreneurship" in
-                the
-                specialty
-                "economist-manager". He received a bachelor's degree and a specialist's degree.
-                He was retrained at BSUIR ( "Belarusian State University of Informatics and
-                Radio Electronics") majoring in "software engineer". The study was so
-                It was fascinating that I decided to continue working in this direction, and began to study JS on my
-                own
-                by
-                the book (David Flanagan - JavaScript. Detailed Guide (6th edition) - 2021). But I realized that
-                without
-                I can't do without additional help, and I signed up for Front-end courses. I got a lot of
-                information,
-                but
-                I understand that not everything is and I want to go further in this direction... Now I am
-                continuing to
-                study this profession and
-                I am improving my knowledge base, including English, and trying to develop in this
-                direction.
-            </p>
-            <div class="projects">
-                <h3 class="projects-title">Projects</h3><br>
-                <ol>
-                    <li class="projects-item">
-                        <a class="url-project" href="https://diplop-itschool.vercel.app/">ShopPresents</a>
-                        <span><b>[</b><span class="tech-name">HTML5, CSS , React</span><b>]</b></span>
-                    </li>
-                    <li class="projects-item">
-                        <a class="url-project" href="https://shop-js-olive.vercel.app/">ShopJS</a>
-                        <span><b>[</b><span class="tech-name">HTML5, CSS</span><b>]</b></span>
-                    </li>
-                    <li class="projects-item">
-                        <a class="url-project" href="https://udjenkl.github.io/beautiful-slider/">Slider1</a>
-                        <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
-                    </li>
-                    <li class="projects-item">
-                        <a class="url-project" href="https://udjenkl.github.io/SliderUpDown/">Slider2</a>
-                        <span><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></span>
-                    </li>
-                </ol>
+                <h1 class="name"  id="about"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
+                        height="50" />
+                    Yauhen Klimovich</h1>
+                <h2 class="profession">Front-end developer</h2>
+                <p class="description">
+                    I live in Minsk. Since school age I have been interested in programming. He graduated from the
+                    "Private Institute of Management and Entrepreneurship" with a degree in economics-manager. Received
+                    a bachelor's and specialist's degree. Passed retraining at BSUIR ("Belarusian State University of
+                    Informatics and Radioelectronics") with a degree in software engineer. 12/15/2022 Finished offline
+                    courses on Frontend (JS, React, Redux). Now I continue to study this profession and improve my
+                    knowledge base, including English, and try to develop in this direction. I am currently studying at
+                    RS School.
+                </p>
+              <section id="#pr">
+                <div class="projects">
+                    <h3 class="projects-title" id="projects">Projects</h3><br>
+                    <ul>
+                        <li class="projects-item card">
+                            <a class="url-project" href="https://diplop-itschool.vercel.app/"><img
+                                    src="./img/project_01.jpg" alt="project"></a>
+                            <h2><b>[</b><span class="tech-name">Online Magazine</span><b>]</b></h2>
+
+                        </li>
+                        <li class="projects-item card">
+                            <a class="url-project" href="https://shop-js-olive.vercel.app/"><img
+                                    src="./img/project_02.jpg" alt="project"></a>
+                            <h2><b>[</b><span class="tech-name">Online Magazine</span><b>]</b></h2>
+                        </li>
+                        <li class="projects-item card">
+                            <a class="url-project" href="https://udjenkl.github.io/beautiful-slider/"><img
+                                    src="./img/project_03.jpg" alt="project"></a>
+                            <h2><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></h2>
+                        </li>
+                        <li class="projects-item card">
+                            <a class="url-project" href="https://udjenkl.github.io/SliderUpDown/"><img
+                                    src="./img/project_04.jpg" alt="project"></a>
+                            <h2><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></h2>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+                <div class="code-example card" id="code">
+                    <h2>Code Example</h2>
+                    <pre>
+                        function removeEveryOther(arr) {
+                            let result = [];
+                            result = arr.filter((item, index) => (index+1) % 2);
+                            console.log(result);
+                            return result;
+                        }
+</pre>
+                </div>
             </div>
-            <div class="code-example">
-                <pre>function  changeColor (item) {
-    const color = getRandomColor();
-    item.style.backgroundColor = color;
-    item.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
-}
-&nbsp;
-function removeColor (item) {
-    item.style.backgroundColor = '#28292C';
-    item.style.boxShadow = `0 0 2px #000`
-}
-&nbsp;
-function getRandomColor () {
-   const index =  Math.floor(Math.random() * colors.length);
-   return colors[index]
-}</pre>
-            </div>
-        </div>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <a href="https://rs.school/js/"><img src="./img/rs_school_js.svg" alt="rsschool"></a>
+            <h4>Yauhen Klimovich 2022</h4>
+            <a href="https://github.com/UdjenKL"><img src="./img/1220319_github_git_hub_repository_icon.svg"
+                    alt="git"></a>
+        </footer>
     </div>
 
 </body>
