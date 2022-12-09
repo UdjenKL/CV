@@ -4,18 +4,16 @@
 
 html, body {
     height: 100%;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
-    /* background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple); */
     background: #2F4F4F;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    
 }
 
 .cv {
@@ -24,6 +22,7 @@ body {
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    max-width: 1440px;
 }
 
 .header, .nav, .aside, .main, .footer {
@@ -32,7 +31,6 @@ body {
 }
 
 .header {
-    /* background: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple); */
     color: white;
     background: #171F2B;
     background: #1c2635;
@@ -41,34 +39,32 @@ body {
     align-items: center;
     height: 100px;
     margin-bottom: 10px;
-    /* background: #FFFFFF; */
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
-   
     height: 50px;
-    /* margin-bottom: 10px; */
     background: #680D27;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
     color: white;
 }
+
 .nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
 }
+
 .nav-list a {
     text-decoration: none;
     font-size: 20px;
     color: white;
     margin-right: 50px;
- 
+
 }
+
 .nav-list a:hover {
     font-size: 25px;
 }
@@ -83,8 +79,8 @@ body {
 }
 .avatar {
     width: 320px;
-    /* border-radius: 100px; */
 }
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -100,18 +96,19 @@ body {
     font-weight: 700;
     line-height: 28px;
     color: #fff;
-
 }
 
 .contacts-url {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 3px;
     line-height: 24px;
     color: #fff;
     margin-right: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .skills {
@@ -143,18 +140,17 @@ body {
 }
 
 .main {
-    
     display: flex;
     padding: 0 0 0 0;
     margin: 0 auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.90);
     font-family: 'Nunito', sans-serif;
 }
+
 .content {
     max-width: 864px;
     margin: 0 auto;
     padding: 0 90px;
-    
 }
 
 .card {
@@ -168,6 +164,7 @@ body {
     padding: 5px;
     margin-bottom: 20px;
 }
+
 .card:hover {
     box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.30);
     transform: translateY(-5px);
@@ -188,6 +185,7 @@ body {
     font-weight: 700;
     line-height: 89px;
 }
+
 .description {
     font-size: 18px;
     font-weight: 400;
@@ -195,6 +193,7 @@ body {
     margin-top: 24px;
     text-align: justify;
 }
+
 .projects-title {
     margin-top: 20px;
     font-size: 22px;
@@ -207,21 +206,18 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    /* background-color: hsl(35, 61%, 79%); */
     text-align: center;
     margin-bottom: 55px;
 }
+
 .projects ul {
-    
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-left: 0;
-  
 }
-
 
 .url-project a{
     color: white;
@@ -230,28 +226,30 @@ body {
     line-height: 40px;
     text-decoration: none;
     padding-left: 0;
-
 }
+
 .projects-item {
     display: flex;
-    
     flex-direction: column;
     font-weight: 700;
     margin-left: 10px;
     list-style-type: none;
-    
 }
+
 .projects-item img {
    border-radius:20px;
     width: 200px;
     height: 150px;
 }
+
 .code-example {
     border-radius: 20px;
     background: #ffff;
     padding: 20px;
     margin-bottom: 40px;
 }
+
+
 
 .footer {
     display: flex;
@@ -262,6 +260,7 @@ body {
     background-color: #7E1A34;
     color: white;
 }
+
 .footer img{
     height: 40px;
 }
