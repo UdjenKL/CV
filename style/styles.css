@@ -248,9 +248,21 @@ body {
     padding: 20px;
     margin-bottom: 40px;
 }
-
-
-
+.certificate {
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    gap: 20px;
+}
+.certificate img {
+    width: 100%;
+}
+.certificate img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
 .footer {
     display: flex;
     justify-content: space-around;
@@ -260,7 +272,6 @@ body {
     background-color: #7E1A34;
     color: white;
 }
-
 .footer img{
     height: 40px;
 }
