@@ -137,8 +137,21 @@
 
         @media (max-width: 425px) {
             .cv {
-                padding: 0 0 0 0;
                 margin: 0 auto;
+            }
+            .content {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+            .aside {
+                padding-right:15px;
+                padding-left: 15px;
+                padding-top: 15px;
+                width: 100%;
+            }
+            .cv .main .aside .avatar {
+                border-radius: 80px;
             }
 
             .header {
@@ -171,17 +184,21 @@
                 margin-top: 0;
                 font-size: 15px;
             }
+
             .skills {
                 margin-top: 20px;
                 margin-right: 5px;
                 margin-left: 0;
             }
+
             .skills span {
                 font-size: 12px;
             }
+
             .skills .skills-title {
                 font-size: 12px;
             }
+
             .name {
                 margin-bottom: 0;
                 margin-top: 0;
@@ -245,14 +262,26 @@
             .skills-title {
                 font-size: 17px;
             }
-
+            .tech-name {
+                font-size: 12px;
+            }
+            /*img[alt='project'][src^='./img/project_'] {*/
+            /*    width: 100%;*/
+            /*    height: auto;*/
+            /*}*/
             .code-example.card {
                 width: 200px;
                 padding-left: 8px;
             }
+
             pre {
                 /*overflow: scroll;*/
                 white-space: pre-wrap;
+            }
+
+            .certificate img {
+                width: 100%;
+                height: 100%;
             }
 
             .footer {
@@ -264,12 +293,30 @@
             .cv {
                 margin-left: 15px;
             }
+
+            .cv .main .aside .avatar {
+                border-radius: 80px;
+            }
+            .aside {
+                padding-right: 20px;
+                padding-left: 15px;
+                padding-top: 15px;
+                width: 100%;
+
+            }
+            .content {
+                margin-left: 0;
+                margin-right: 0;
+               width: 100%;
+
+            }
         }
 
         @media (max-width: 320px) {
             .cv {
                 margin-left: 1px;
             }
+
             .footer h4 {
                 font-size: 12px;
             }
