@@ -99,6 +99,9 @@
         }
 
         @media (max-width: 768px) {
+            .cv {
+                max-width: 768px;
+            }
             .aside {
                 max-width: 210px;
             }
@@ -106,10 +109,16 @@
             .aside img {
                 max-width: 190px;
             }
-
+            .content .name {
+                font-size: 15px;
+            }
             .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 background: white;
-                max-width: 900px;
+                max-width: 558px;
                 margin-left: 0;
                 margin-right: 0;
                 padding-left: 25px;
@@ -143,6 +152,17 @@
 
             pre {
                 width: 200px;
+            }
+        }
+        @media (max-width: 480px) {
+.nav {
+    max-width:480px;
+}
+            .content {
+               max-width:220px;
+            }
+            .main {
+                gap: 6px;
             }
         }
 
@@ -318,6 +338,9 @@
             .cv {
                 max-width: 379px;
             }
+            .content h2 .hi {
+                display: none;
+            }
 
             .header {
                 max-width: 379px;
@@ -337,6 +360,10 @@
             }
 
             .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 margin-left: 0;
                 margin-right: 0;
                 max-width: 100%;
@@ -346,6 +373,10 @@
                 max-width:138px;
                 line-height: 30px;
                 font-size: 10px;
+                align-items: center;
+            }
+            .profession {
+               margin-bottom: 0;
             }
             .projects img {
                 width: 160px;
@@ -353,7 +384,9 @@
             }
 
             .description {
-                margin-right: 5px;
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-bottom: 0;
             }
 
             .footer {
@@ -378,6 +411,9 @@
                 max-width:128px;
                 line-height: 30px;
                 font-size: 10px;
+            }
+            .content h2 .hi {
+                display: none;
             }
             .content img {
                 width: 100px;
@@ -515,7 +551,7 @@
             </div>
         </aside>
         <div class="content">
-            <h2 class="name" id="about"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
+            <h2 class="name" id="about"><img class="hi" src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
                                              height="50" alt="hi">
                 Yauhen Klimovich</h2>
             <h2 class="profession">Front-end developer</h2>
