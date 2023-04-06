@@ -1,4 +1,4 @@
-https://UdjenKL.github.io/rsschool-cv/cv
+https://UdjenKL.github.io/cv/cv
 
 
-https://UdjenKL.github.io/rsschool-cv/
+https://UdjenKL.github.io/cv/
