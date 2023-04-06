@@ -9,6 +9,20 @@
     <link href="style/styles.css" rel="stylesheet">
     <title>Document</title>
     <style>
+        @media (max-width: 3840px) {
+            .aside img {
+                width: 500px;
+            }
+
+            .main {
+                margin: 0 auto;
+            }
+
+            .aside {
+                max-width: 520px;
+            }
+        }
+
         @media (max-width: 2560px) {
             .aside {
                 max-width: 620px;
@@ -102,6 +116,7 @@
             .cv {
                 max-width: 768px;
             }
+
             .aside {
                 max-width: 210px;
             }
@@ -109,9 +124,11 @@
             .aside img {
                 max-width: 190px;
             }
+
             .content .name {
                 font-size: 15px;
             }
+
             .content {
                 display: flex;
                 flex-direction: column;
@@ -154,13 +171,27 @@
                 width: 200px;
             }
         }
+
         @media (max-width: 480px) {
-.nav {
-    max-width:480px;
-}
-            .content {
-               max-width:220px;
+            .content h2 .hi {
+                display: none;
             }
+            .nav {
+                max-width: 480px;
+            }
+            .aside {
+                width: 620px;
+            }
+            .content {
+                max-width: 220px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .content .name {
+                font-size: 15px;
+            }
+
             .main {
                 gap: 6px;
             }
@@ -174,6 +205,7 @@
                 margin-right: 0;
                 width: 100%;
             }
+
             .content img {
                 width: 160px;
                 height: auto;
@@ -236,7 +268,6 @@
                 margin-top: 0;
                 font-size: 5px;
             }
-
 
 
             .aside img {
@@ -338,6 +369,7 @@
             .cv {
                 max-width: 379px;
             }
+
             .content h2 .hi {
                 display: none;
             }
@@ -369,15 +401,18 @@
                 max-width: 100%;
 
             }
+
             .content .name {
-                max-width:138px;
+                max-width: 138px;
                 line-height: 30px;
                 font-size: 10px;
                 align-items: center;
             }
+
             .profession {
-               margin-bottom: 0;
+                margin-bottom: 0;
             }
+
             .projects img {
                 width: 160px;
                 height: auto;
@@ -400,6 +435,7 @@
                 margin: 0 auto;
                 max-width: 100%;
             }
+
             .nav a {
                 font-size: 15px;
                 padding-right: 4px;
@@ -407,18 +443,22 @@
                 margin-right: 18px;
                 margin-left: 20px
             }
+
             .content .name {
-                max-width:128px;
+                max-width: 128px;
                 line-height: 30px;
                 font-size: 10px;
             }
+
             .content h2 .hi {
                 display: none;
             }
+
             .content img {
                 width: 100px;
                 height: auto;
             }
+
             .header {
                 max-width: 100%;
             }
@@ -428,9 +468,11 @@
                 padding-left: 10px;
                 padding-right: 10px;
             }
+
             .content p {
                 max-width: 130px;
             }
+
             .footer {
                 max-width: 320px;
             }
@@ -551,7 +593,8 @@
             </div>
         </aside>
         <div class="content">
-            <h2 class="name" id="about"><img class="hi" src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
+            <h2 class="name" id="about"><img class="hi"
+                                             src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
                                              height="50" alt="hi">
                 Yauhen Klimovich</h2>
             <h2 class="profession">Front-end developer</h2>
@@ -589,7 +632,8 @@
                         <h2><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></h2>
                     </li>
                     <li class="projects-item card">
-                        <a class="url-project" href="https://rolling-scopes-school.github.io/udjenkl-JSFE2023Q1/shelter/"><img
+                        <a class="url-project"
+                           href="https://rolling-scopes-school.github.io/udjenkl-JSFE2023Q1/shelter/"><img
                                 src="img/progects/project_05.jpg" alt="project"></a>
                         <h2><b>[</b><span class="tech-name">Shelter</span><b>]</b></h2>
                     </li>
