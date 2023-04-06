@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style/styles.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @media (max-width: 2560px) {
+            .aside {
+                max-width: 620px;
+            }
+
+            .aside img {
+                max-width: 600px;
+            }
+
+            .content {
+                max-width: 1800px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 1920px) {
+            .aside {
+                max-width: 450px;
+            }
+
+            .aside img {
+                width: 430px;
+            }
+
+            .content {
+                max-width: 1450px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .aside {
+                width: 400px;
+            }
+
+            .aside img {
+                width: 300px;
+            }
+
+            .content {
+                max-width: 100%;
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .skills {
+                margin-left: 10px;
+            }
+
+        }
+
+        @media (max-width: 1024px) {
+            .aside {
+                max-width: 270px;
+            }
+
+            .aside img {
+                max-width: 250px;
+            }
+
+            .content {
+                max-width: 1024px;
+                background: white;
+            }
+
+            .content .description {
+                padding-bottom: 20px;
+            }
+
+            code {
+                font-family: monospace;
+                text-align: center;
+            }
+
+            .name {
+                font-size: 28px;
+            }
+
+            ul {
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .card:nth-child(5) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .aside {
+                max-width: 210px;
+            }
+
+            .aside img {
+                max-width: 190px;
+            }
+
+            .content {
+                background: white;
+                max-width: 900px;
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .name {
+                font-size: 20px;
+            }
+
+            .contacts-url {
+                font-size: 15px;
+            }
+
+            .skills {
+                margin-left: 5px;
+            }
+
+            .skills-title {
+                font-size: 20px;
+            }
+
+            ul {
+                font-size: 20px;
+                padding-left: 0;
+            }
+
+            .code-example.card {
+                width: 350px;
+            }
+
+            pre {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 425px) {
+
+
+            .content {
+                margin-left: 16px;
+                margin-right: 0;
+                width: 100%;
+            }
+
+            .aside {
+                padding-right: 16px;
+                padding-left: 15px;
+                padding-top: 15px;
+                width: 100%;
+            }
+
+            .cv .main .aside .avatar {
+                border-radius: 80px;
+            }
+
+            header .name {
+                font-size: 30px;
+            }
+
+            .content .name {
+                font-size: 15px;
+            }
+
+            .contacts-title {
+                font-size: 20px;
+            }
+
+            .contacts-url {
+                font-size: 10px;
+                margin-bottom: 0;
+            }
+
+            .description {
+                font-size: 15px;
+                width: 190px;
+            }
+
+            .profession {
+                margin-top: 0;
+                font-size: 15px;
+            }
+
+            .skills {
+                margin-top: 20px;
+                margin-right: 5px;
+                margin-left: 0;
+            }
+
+            .skills span {
+                font-size: 12px;
+            }
+
+            .skills .skills-title {
+                font-size: 12px;
+            }
+
+            .name {
+                margin-bottom: 0;
+                margin-top: 0;
+                font-size: 5px;
+            }
+
+            .content img {
+                width: 15px;
+                height: 15px;
+            }
+
+
+            .aside img {
+                width: 100%;
+            }
+
+
+            .nav a {
+                font-size: 15px;
+                padding-right: 10px;
+                padding-left: 0;
+                margin-right: 20px;
+            }
+
+            ul {
+                font-size: 10px;
+                padding-left: 0;
+            }
+
+            .main {
+
+                margin-left: 0;
+            }
+
+            .content {
+                background: white;
+                width: 220px;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+
+            }
+
+            .skills {
+                margin-left: 10px;
+            }
+
+            .contacts-url {
+                margin-right: 0;
+            }
+
+            .skills-title {
+                font-size: 17px;
+            }
+
+            .tech-name {
+                font-size: 12px;
+            }
+
+            .code-example.card {
+                width: 200px;
+                padding-left: 8px;
+            }
+
+            pre {
+                white-space: pre-wrap;
+            }
+
+            .certificate img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .footer {
+                max-width: 425px;
+            }
+        }
+
+        @media (max-width: 393px) {
+            .cv {
+                margin-left: 0;
+            }
+
+            .header {
+                max-width: 393px;
+            }
+
+            /*.nav {*/
+            /*    max-width: 393px;*/
+            /*}*/
+            .aside {
+                padding-right: 20px;
+                padding-left: 15px;
+                padding-top: 15px;
+                width: 100%;
+
+            }
+
+            .content {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+
+            }
+        }
+
+        @media (max-width: 379px) {
+            .cv {
+                max-width: 379px;
+            }
+
+            .header {
+                max-width: 379px;
+            }
+
+            .nav {
+                max-width: em;
+            }
+
+            .cv .main .aside .avatar {
+                border-radius: 80px;
+            }
+
+            .aside {
+                padding-right: 20px;
+                padding-left: 15px;
+                padding-top: 15px;
+                width: 100%;
+
+            }
+
+            .content {
+                margin-left: 0;
+                margin-right: 0;
+                max-width: 100%;
+
+            }
+            .content .name {
+                max-width:138px;
+                line-height: 30px;
+                font-size: 10px;
+            }
+            .content img {
+                width: 100px;
+                height: auto;
+            }
+
+            .description {
+                margin-right: 5px;
+            }
+
+            .footer {
+                max-width: 379px;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            .nav {
+                margin: 0 auto;
+                max-width: 100%;
+            }
+            .nav a {
+                font-size: 15px;
+                padding-right: 4px;
+                padding-left: 0;
+                margin-right: 18px;
+                margin-left: 20px
+            }
+            .content .name {
+                max-width:128px;
+                line-height: 30px;
+                font-size: 10px;
+            }
+            .content img {
+                width: 100px;
+                height: auto;
+            }
+            .header {
+                max-width: 100%;
+            }
+
+            .content {
+                max-width: 180px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .content p {
+                max-width: 130px;
+            }
+            .footer {
+                max-width: 320px;
+            }
+
+            .footer h4 {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="cv">
+    <header class="header">
+        <h1 class="name">Resume</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <aside class="aside">
+            <img class="avatar" src="img/ava.jpg" alt="My photo">
+            <div class="aside-main">
+                <div class="contacts">
+                    <br>
+                    <h3 class="contacts-title">Contacts</h3><br>
+                    <div>
+                        <a class="contacts-url" href="mailto:udjenkl@icloud.com">udjenkl@icloud.com</a>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="#">Udjen#2712 (Discord)</a>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="https://t.me/Undefined">Undefined (Telegram)</a>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="https://www.linkedin.com/in/udjenkl/">udjenkl (LinkedIn)</a>
+                    </div>
+                    <div>
+                        <a class="contacts-url" href="https://github.com/UdjenKL">GitHub</a>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3 class="skills-title" id="skills">Tech Skills</h3>
+                    <ul>
+                        <li class="item">
+                            <span class="skills-content">HTML5</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">SCSS,SASS</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">GIT/GitHub</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">WebPack</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">JavaScript</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">React.js , Redux</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Base Node.js</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Linux , MacOS , Windows</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">WebStorm , VsCode</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Figma</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Bootstrap</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3 class="skills-title">Main qualities:</h3>
+                    <ul>
+                        <li class="item">
+                            <span class="skills-content">Discipline</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Meeting deadlines</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Analytic skills</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Focus on results</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Desire to learn new technologies and tools.</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3 class="skills-title">Languages</h3>
+                    <ul>
+                        <li class="item">
+                            <span class="skills-content">English - A2</span>
+                        </li>
+                        <li class="item">
+                            <span class="skills-content">Russian - C2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="content">
+            <h2 class="name" id="about"><img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif"
+                                             height="50" alt="hi">
+                Yauhen Klimovich</h2>
+            <h2 class="profession">Front-end developer</h2>
+            <p class="description">
+                I live in Minsk. Since school age I have been interested in programming. He graduated from the
+                "Private Institute of Management and Entrepreneurship" with a degree in economics-manager. Received
+                a bachelor's and specialist's degree. Passed retraining at BSUIR ("Belarusian State University of
+                Informatics and Radioelectronics") with a degree in software engineer. 12/15/2022 Finished offline
+                courses on Frontend (JS, React, Redux). Now I continue to study this profession and improve my
+                knowledge base, including English, and try to develop in this direction. I am currently studying at
+                RS School.
+            </p>
+            <div class="projects">
+                <h3 class="projects-title" id="projects">Projects</h3><br>
+                <ul>
+                    <li class="projects-item card">
+                        <a class="url-project" href="https://diplop-itschool.vercel.app/"><img
+                                src="img/progects/project_01.jpg" alt="project"></a>
+                        <h2><b>[</b><span class="tech-name">Online Magazine React</span><b>]</b></h2>
+
+                    </li>
+                    <li class="projects-item card">
+                        <a class="url-project" href="https://udjenkl.github.io/cssBayan/cssBayan/index.html"><img
+                                src="img/progects/project_02.jpg" alt="project"></a>
+                        <h2><b>[</b><span class="tech-name">CssBayan</span><b>]</b></h2>
+                    </li>
+                    <li class="projects-item card">
+                        <a class="url-project" href="https://udjenkl.github.io/beautiful-slider/"><img
+                                src="img/progects/project_03.jpg" alt="project"></a>
+                        <h2><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></h2>
+                    </li>
+                    <li class="projects-item card">
+                        <a class="url-project" href="https://udjenkl.github.io/SliderUpDown/"><img
+                                src="img/progects/project_04.jpg" alt="project"></a>
+                        <h2><b>[</b><span class="tech-name">HTML5, CSS , JavaScript ❤️</span><b>]</b></h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="code-example card" id="code">
+                <h2>Code Example</h2>
+                <pre>
+<code>
+
+<span class="blue">function</span> hexRandomColor () {
+
+<span class="blue">const</span> hexCodes = <span class="orange">'0123456789ABCDEF'</span>
+
+<span class="blue">let</span> color = ""
+
+<span class="violet">for</span> (<span class="blue">let</span> i = 0; i &lt; 6; i++) {
+
+color += <span class="blue">hexCodes</span>[Math.<span class="yellow">floor</span>(Math.<span
+        class="yellow">random</span>() * <span class="blue">hexCodes.length</span>)]
+
+}
+
+<span class="violet">return</span> '#' + color
+
+} </code></pre>
+            </div>
+            <div class="certificate">
+                <img src="./img/certificate/rss0.jpg" alt="Certificate of Completion">
+                <img src="./img/certificate/myitschool.jpg" alt="Certificate of Completion">
+                <img src="./img/certificate/udemy.jpg" alt="Certificate of Completion">
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <a href="https://rs.school/js/"><img src="img/rss.svg" alt="rsschool"></a>
+        <h4>Yauhen Klimovich 2022</h4>
+        <a href="https://github.com/UdjenKL"><img src="img/git.svg" alt="git"></a>
+    </footer>
+</div>
+</body>
+
+</html>
