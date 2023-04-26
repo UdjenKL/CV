@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap')
+
+*
+  box-sizing: border-box
+  font-family: Montserrat
+
+html
+  scroll-behavior: smooth
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: inherit
+  font-size: inherit
+  margin: 0
+
+body
+  background-color: #111
+
+a
+  display: block
+  text-decoration: none
+
+.container
+  margin: 0 auto
+  width: 1000px
+  overflow: hidden
+
+.header
+  &__container
+    position: relative
+    width: 100%
+    background-color: #fff
+    display: flex
+    align-items: center
+    color: #202026
+    text-transform: uppercase
+    background-color: #202026
+  &__photo
+    width: 30%
+    display: flex
+    overflow: hidden
+  &__image
+    width: 100%
+  &__content
+    width: 70%
+    height: 200px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+  &-menu
+    height: 20%
+    display: flex
+    align-items: center
+    background-color: #fecb00
+    font-size: 18px
+    &__link
+      color: #202026
+      font-weight: 600
+    &__list
+      width: 100%
+      display: flex
+      justify-content: flex-end
+    &__item
+      position: relative
+      margin-right: 20px
+      &::before
+        content: ''
+        position: absolute
+        height: 2px
+        width: 0%
+        bottom: 0
+        background-color: #202026
+        transition: 0.5s width ease-in-out
+      &:hover
+        cursor: pointer
+        &::before
+          width: 100%
+  &__info
+    height: 60%
+    display: flex
+    padding-right: 20px
+    flex-direction: column
+    align-items: flex-end
+    justify-content: center
+    background-color: #fecb00
+  &__title
+    font-weight: 600
+    font-size: 46px
+  &__subtitle
+    font-size: 22px
+
+.main-content__container
+  display: flex
+
+.aside
+  width: 30%
+  padding: 20px 0 0 30px
+  background-color: #202026
+  color: #fff
+  display: flex
+  flex-direction: column
+
+
+.side__link
+  position: relative
+  color: #fecb00
+  margin-bottom: 5px
+  transition: 0.25s color ease-in-out
+  &::before
+    content: ''
+    position: absolute
+    height: 18px
+    width: 5px
+    background-color: #fecb00
+    left: -45px
+    transition: 0.5s all ease-in-out
+  &:hover
+    color: #fff
+    &::before
+      background-color: #fff
+      width: 15%
+
+.side__header
+  font-size: 28px
+  text-transform: uppercase
+  font-weight: 600
+  color: #fff
+
+.education
+  margin-bottom: 54px
+  &__place
+    margin-bottom: 20px
+  &__title
+    font-size: 22px
+    margin-bottom: 10px
+  &__descr
+    padding-left: 15px
+    font-size: 18px
+.skills
+  &__list
+    display: flex
+    flex-direction: column
+  &__item
+    display: flex
+    align-items: center
+    min-height: 30px
+    padding-left: 40px
+    margin-bottom:  10px
+    color: #fecb00
+    background-repeat: no-repeat
+    background-size: 30px
+    background-position: left center
+  &__html
+    background-image: url('../assets/icons/html.svg')
+  &__css
+    background-image: url('../assets/icons/css.svg')
+  &__sass
+    background-image: url('../assets/icons/sass.svg')
+  &__bootstrap
+    background-image: url('../assets/icons/bootstrap.svg')
+  &__javascript
+    background-image: url('../assets/icons/javascript.svg')
+  &__github
+    background-image: url('../assets/icons/github.svg')
+  &__figma
+    background-image: url('../assets/icons/figma.svg')
+
+.main
+  width: 70%
+  padding: 20px 30px
+  background-color: #fff
+  color: #202026
+  section
+    margin-bottom: 20px
+    &:nth-child(3)
+      margin: 0
+  &__header
+    font-size: 28px
+    text-transform: uppercase
+    font-weight: 600
+    text-align: right
+  &__descr
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 20px
+    text-align: justify
+  &__subheader
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: 600
+  &__list
+    margin: 0 0 10px 0
+    padding: 10px 0 0 30px
+    list-style: circle
+  &__item
+    font-size: 18px
+    margin: 10px 0
+
+.quote
+  margin-top: 20px
+  text-align: center
+  font-size: 20px
+  font-weight: 600
+  position: relative
+  a
+    color: #2d2d2d
+  &::before
+    content: ''
+    display: block
+    width: 5px
+    height: 32px
+    position: absolute
+    left: -30px
+    top: -2px
+    background-color: #fecb00
+    transition: 0.5s all
+  &::after
+    content: ''
+    display: block
+    width: 5px
+    height: 32px
+    position: absolute
+    right: -30px
+    top: -2px
+    background-color: #fecb00
+    transition: 0.5s all
+  &:hover
+    &::before
+      width: 35%
+    &::after
+      width: 35%
+
+.code-example
+  display: flex
+  flex-direction: column
+  .pre
+    margin: 0
+    display: flex
+    align-self: center
+    width: 100%
+  .code
+    width: 100%
+    line-height: 22px
+    padding: 0
+    background-color: #202026
+
+.projects
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    padding-bottom: 20px
+  &__item
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 45%
+  &__link
+    transition: 0.5s all ease-in-out
+    overflow: hidden
+    &:hover
+      transform: scale(1.1)
+      border-radius: 20px
+  &__image
+    display: block
+    width: 100%
+  &__info
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-top: 10px
+    border: 1px solid #202026
+    border-radius: 0 0 20px 20px
+    text-align: justify
+    background-color: #fecb00
+    overflow: hidden
+    min-height: 220px
+  &__descr
+    padding: 10px
+  &-tech
+    background-color: #202026
+    min-height: 60px
+    &__list
+      padding: 5px 0px
+      display: flex
+      justify-content: space-around
+    &__item
+      height: 50px
+    &__image
+      height: 100%
+  &__title
+    text-transform: uppercase
+    font-size: 16px
+    color: #202026
+    text-align: center
+    font-weight: 600
+
+.footer
+  &__container
+    background-color: #fecb00
+    display: flex
+  &__content
+    display: flex
+    width: 70%
+    height: 200px
+    justify-content: space-around
+  &__item
+    display: flex
+    align-items: center
+  &__date
+    display: flex
+    align-items: center
+    font-size: 18px
+    font-weight: 600
+    text-transform: uppercase
+  &__image
+    height: 120px
+
+.contacts
+  width: 30%
+  background-color: #202026
+  padding: 0 0 0 30px
+  &__item
+    padding-left: 15px
+
+.burger__btn
+  display: none
+
+.divider
+  height: 2px
+  width: 100%
+  margin-bottom: 20px
+  &_yellow
+    background-color: #fecb00
+  &_black
+    background-color: #202026
+
