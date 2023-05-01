@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +13,25 @@
             .container {
                 width: 768px;
             }
+
             .header__content {
                 height: 150px;
                 flex-direction: column-reverse;
             }
+
             .header-menu {
                 height: 20%;
                 font-size: 16px;
             }
+
             .header-menu__list {
                 justify-content: space-around;
             }
+
             .header-menu__item {
                 margin: 0;
             }
+
             .header__info {
                 height: 50%;
                 background-color: #202026;
@@ -33,67 +39,87 @@
                 align-items: center;
                 padding-right: 10px;
             }
+
             .header__title {
                 font-size: 42px;
             }
+
             .header__subtitle {
                 font-size: 20px;
             }
+
             .side__header {
                 font-size: 24px;
             }
+
             .side__link::before {
                 left: -30px;
                 height: 16px;
             }
+
             .side__link:hover::before {
                 width: 10%;
             }
+
             .education {
                 margin-bottom: 108px;
             }
+
             .education__title {
                 font-size: 18px;
             }
+
             .education__descr {
                 font-size: 14px;
                 padding: 0;
             }
+
             .main__header {
                 font-size: 24px;
             }
+
             .main__descr {
                 font-size: 16px;
             }
+
             .main__item {
                 font-size: 16px;
             }
+
             .projects__info {
                 min-height: 255px;
             }
+
             .pre {
                 font-size: 14px;
             }
+
             .pre .code {
                 overflow-x: hidden;
             }
+
             .footer__image {
                 height: 90px;
             }
         }
+
         @media screen and (max-width: 576px) {
             .container {
                 width: 576px;
             }
+
             .header__title {
                 font-size: 38px;
             }
+
             .header__subtitle {
                 font-size: 16px;
             }
+
             .header__content {
                 height: 100%;
             }
+
             .header-menu {
                 width: 50%;
                 display: block;
@@ -104,6 +130,7 @@
                 background-color: rgba(32, 32, 38, 0.5);
                 transition: 0.5s top ease-in-out;
             }
+
             .header-menu__list {
                 height: 100%;
                 flex-direction: column;
@@ -111,15 +138,19 @@
                 justify-content: space-around;
                 font-size: 18px;
             }
+
             .header-menu__item::before {
                 background-color: #fff;
             }
+
             .header-menu__link {
                 color: #fff;
             }
+
             .header-menu_active {
                 top: 0;
             }
+
             .burger__btn {
                 display: block;
                 top: 10%;
@@ -130,218 +161,277 @@
                 cursor: pointer;
                 transition: 0.5s transform ease-in-out;
             }
+
             .burger__btn_active .burger__line:nth-child(1) {
                 top: 0;
             }
+
             .burger__btn_active .burger__line:nth-child(3) {
                 bottom: 0;
             }
+
             .burger__btn_rotate {
                 transform: rotate(90deg);
             }
+
             .burger__line {
                 position: absolute;
                 width: 100%;
                 transition: 0.5s all;
             }
+
             .burger__line:nth-child(1) {
                 top: 5px;
                 height: 8px;
                 border: 2px solid #fff;
                 border-width: 4px 4px 0px 4px;
             }
+
             .burger__line:nth-child(2) {
                 top: 50%;
                 transform: translateY(-50%);
                 height: 4px;
                 background-color: #fff;
             }
+
             .burger__line:nth-child(3) {
                 height: 8px;
                 border: 2px solid #fff;
                 border-width: 0px 4px 4px 4px;
                 bottom: 5px;
             }
+
             .main-content__container {
                 flex-direction: column;
             }
+
             .aside {
                 width: 100%;
                 padding: 20px 30px;
                 flex-direction: row;
                 justify-content: space-between;
             }
+
             .skills .side__header {
                 text-align: right;
             }
+
             .skills__item {
                 padding: 0 40px 0 0;
                 background-position: right center;
             }
+
             .education {
                 width: 50%;
                 margin: 0;
             }
+
             .education__link::before {
                 height: 18px;
                 top: 0;
             }
+
             .side__link::before {
                 left: -30px;
                 width: 2px;
             }
+
             .side__link:hover::before {
                 width: 10%;
             }
+
             .main {
                 width: 100%;
             }
+
             .contacts {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
+
             .contacts__item {
                 padding: 0;
             }
+
             .footer__content {
                 height: 150px;
             }
+
             .footer__image {
                 height: 70px;
             }
         }
+
         @media screen and (max-width: 425px) {
             .container {
                 width: 425px;
             }
+
             .header__title {
                 font-size: 30px;
             }
+
             .header__subtitle {
                 font-size: 14px;
             }
+
             .header-menu__list {
                 font-size: 14px;
             }
+
             .aside {
                 flex-direction: column;
                 padding: 20px;
             }
+
             .education {
                 width: 100%;
             }
+
             .education__descr {
                 padding-left: 20px;
             }
+
             .skills {
                 width: 100%;
             }
+
             .skills__list {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
             }
+
             .skills__item {
                 padding: 0;
                 padding-left: 40px;
                 width: 35%;
                 background-position: left center;
             }
+
             .side__link {
                 display: inline-block;
             }
+
             .side__link::before {
                 width: 0%;
                 height: 2px;
                 left: 0;
                 top: 100%;
             }
+
             .side__link:hover::before {
                 width: 100%;
             }
+
             .main {
                 padding: 20px;
             }
+
             .main__header {
                 text-align: left;
             }
+
             .quote::before {
                 left: -20px;
             }
+
             .quote::after {
                 right: -20px;
             }
-            .quote:hover::before, .quote:hover::after {
+
+            .quote:hover::before,
+            .quote:hover::after {
                 width: 30%;
             }
+
             .projects__wrapper {
                 flex-direction: column;
                 align-items: center;
             }
+
             .projects__item {
                 margin-bottom: 20px;
                 width: 85%;
             }
+
             .projects__item:nth-child(2) {
                 margin: 0;
             }
+
             .projects__info {
                 min-height: 100%;
             }
+
             .pre {
                 font-size: 10px;
             }
+
             .footer__container {
                 flex-direction: column;
             }
+
             .contacts {
                 width: 100%;
                 padding: 20px;
                 text-align: center;
             }
+
             .contacts__list {
                 display: flex;
                 justify-content: space-around;
             }
+
             .footer__content {
                 width: 100%;
                 height: 100px;
             }
         }
+
         @media screen and (max-width: 375px) {
             .container {
                 width: 375px;
             }
+
             .header__title {
                 font-size: 28px;
             }
+
             .header__subtitle {
                 font-size: 14px;
             }
+
             .side__header {
                 font-size: 20px;
             }
+
             .education__title {
                 font-size: 16px;
             }
+
             .pre {
                 font-size: 8px;
             }
         }
+
         @media screen and (max-width: 320px) {
             .container {
                 width: 320px;
             }
+
             .header__title {
                 font-size: 24px;
             }
+
             .header__subtitle {
                 font-size: 10px;
             }
+
             .footer__content {
                 height: 80px;
             }
+
             .footer__image {
                 height: 50px;
             }
@@ -410,10 +500,11 @@
                         <div class="divider divider_yellow"></div>
                         <div class="education__place">
                             <div class="education__title">
-                               MyITSchool
+                                MyITSchool
                             </div>
                             <div class="education__descr">
-                                <a href="https://raw.githubusercontent.com/UdjenKL/sertificate/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-02-07%20%D0%B2%2020.42.31.png" class="side__link" target="_blank">
+                                <a href="https://raw.githubusercontent.com/UdjenKL/sertificate/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-02-07%20%D0%B2%2020.42.31.png"
+                                    class="side__link" target="_blank">
                                     JS/FE Pre-School
                                 </a>
                             </div>
@@ -424,7 +515,8 @@
                                 RS School
                             </div>
                             <div class="education__descr">
-                                <a href="https://raw.githubusercontent.com/UdjenKL/sertificate/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-03-06%20%D0%B2%2015.19.30.png" class="side__link" target="_blank">
+                                <a href="https://raw.githubusercontent.com/UdjenKL/sertificate/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-03-06%20%D0%B2%2015.19.30.png"
+                                    class="side__link" target="_blank">
                                     JS/FE Pre-School
                                 </a>
                             </div>
@@ -440,13 +532,14 @@
                                 Udemy
                             </div>
                             <div class="education__descr">
-                                <a href="https://raw.githubusercontent.com/UdjenKL/sertificate/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-03-06%20%D0%B2%2015.21.50.png" class="side__link" target="_blank">
+                                <a href="https://raw.githubusercontent.com/UdjenKL/sertificate/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-03-06%20%D0%B2%2015.21.50.png"
+                                    class="side__link" target="_blank">
                                     JavaScript
                                 </a>
                             </div>
                             <div class="education__descr">
-                                <a href="https://www.udemy.com/course/modern_typescript/learn/lecture/33962494?start=0#overview" class="side__link"
-                                    target="_blank">
+                                <a href="https://www.udemy.com/course/modern_typescript/learn/lecture/33962494?start=0#overview"
+                                    class="side__link" target="_blank">
                                     TypeScript (in proccess...)
                                 </a>
                             </div>
@@ -518,8 +611,7 @@
                         <div class="divider divider_black"></div>
                         <div class="projects__wrapper">
                             <div class="projects__item">
-                                <a href="https://diplop-itschool.vercel.app/"
-                                    class="projects__link" target="_blank">
+                                <a href="https://diplop-itschool.vercel.app/" class="projects__link" target="_blank">
                                     <img src="assets/img/project_01.jpg" alt="photo-filter" class="projects__image">
                                 </a>
                                 <div class="projects__info">
@@ -551,8 +643,8 @@
                                 </div>
                             </div>
                             <div class="projects__item">
-                                <a href="https://udjenkl.github.io/cssBayan/cssBayan/index.html"
-                                    class="projects__link" target="_blank">
+                                <a href="https://udjenkl.github.io/cssBayan/cssBayan/index.html" class="projects__link"
+                                    target="_blank">
                                     <img src="assets/img/project_02.jpg" alt="photo-filter" class="projects__image">
                                 </a>
                                 <div class="projects__info">
@@ -585,8 +677,8 @@
                         </div>
                         <div class="projects__wrapper">
                             <div class="projects__item">
-                                <a href="https://udjenkl.github.io/beautiful-slider/"
-                                   class="projects__link" target="_blank">
+                                <a href="https://udjenkl.github.io/beautiful-slider/" class="projects__link"
+                                    target="_blank">
                                     <img src="assets/img/project_03.jpg" alt="photo-filter" class="projects__image">
                                 </a>
                                 <div class="projects__info">
@@ -606,7 +698,7 @@
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/javascript.svg" alt=""
-                                                     class="projects-tech__image">
+                                                    class="projects-tech__image">
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/sass.svg" alt="" class="projects-tech__image">
@@ -616,8 +708,8 @@
                                 </div>
                             </div>
                             <div class="projects__item">
-                                <a href="https://udjenkl.github.io/SliderUpDown/"
-                                   class="projects__link" target="_blank">
+                                <a href="https://udjenkl.github.io/SliderUpDown/" class="projects__link"
+                                    target="_blank">
                                     <img src="assets/img/project_04.jpg" alt="photo-filter" class="projects__image">
                                 </a>
                                 <div class="projects__info">
@@ -637,7 +729,7 @@
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/javascript.svg" alt=""
-                                                     class="projects-tech__image">
+                                                    class="projects-tech__image">
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/sass.svg" alt="" class="projects-tech__image">
@@ -649,8 +741,7 @@
                         </div>
                         <div class="projects__wrapper">
                             <div class="projects__item">
-                                <a href="https://udjenkl.github.io/Our-friends/"
-                                   class="projects__link" target="_blank">
+                                <a href="https://udjenkl.github.io/Our-friends/" class="projects__link" target="_blank">
                                     <img src="assets/img/project_05.jpg" alt="photo-filter" class="projects__image">
                                 </a>
                                 <div class="projects__info">
@@ -658,7 +749,8 @@
                                         Online-Shop
                                     </h4>
                                     <div class="projects__descr">
-                                        "Animal Assistance Website in Boston. Here, a slider, pagination, and carousel are implemented using pure JS."
+                                        "Animal Assistance Website in Boston. Here, a slider, pagination, and carousel
+                                        are implemented using pure JS."
                                     </div>
                                     <div class="projects-tech">
                                         <ul class="projects-tech__list">
@@ -670,7 +762,7 @@
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/javascript.svg" alt=""
-                                                     class="projects-tech__image">
+                                                    class="projects-tech__image">
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/sass.svg" alt="" class="projects-tech__image">
@@ -680,8 +772,7 @@
                                 </div>
                             </div>
                             <div class="projects__item">
-                                <a href="https://udjenkl.github.io/Our-friends/"
-                                   class="projects__link" target="_blank">
+                                <a href="https://udjenkl.github.io/virtual-keyboard/" class="projects__link" target="_blank">
                                     <img src="assets/img/project_06.jpeg" alt="photo-filter" class="projects__image">
                                 </a>
                                 <div class="projects__info">
@@ -701,7 +792,7 @@
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/javascript.svg" alt=""
-                                                     class="projects-tech__image">
+                                                    class="projects-tech__image">
                                             </li>
                                             <li class="projects-tech__item">
                                                 <img src="assets/icons/sass.svg" alt="" class="projects-tech__image">
