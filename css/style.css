@@ -205,6 +205,9 @@ a {
 .skills__javascript {
   background-image: url("../assets/icons/javascript.svg");
 }
+.skills__react {
+  background-image: url("../assets/icons/react.svg");
+}
 .skills__github {
   background-image: url("../assets/icons/github.svg");
 }
@@ -288,23 +291,6 @@ a {
 }
 .quote:hover::after {
   width: 35%;
-}
-
-.code-example {
-  display: flex;
-  flex-direction: column;
-}
-.code-example .pre {
-  margin: 0;
-  display: flex;
-  align-self: center;
-  width: 100%;
-}
-.code-example .code {
-  width: 100%;
-  line-height: 22px;
-  padding: 0;
-  background-color: #202026;
 }
 
 .projects__wrapper {
